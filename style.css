@@ -1,7 +1,7 @@
 /* 전체 페이지 배경 및 기본 폰트 설정 */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f5f7fa; /* 눈이 편안한 맥 스타일 연회색 배경 */
+    background-color: #f5f7fa;
     color: #333333;
     margin: 0;
     padding: 40px 20px;
@@ -26,23 +26,23 @@ header p {
     margin: 0;
 }
 
-/* 2행 2열 그리드 레이아웃 (핵심 요구사항!) */
+/* 2행 2열 그리드 레이아웃 (크기 1400px로 확장) */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 정확히 반반씩 2열로 나눔 */
-    gap: 40px; /* 작품 사이의 간격 */
-    max-width: 1100px;
-    margin: 0 auto; /* 가운데 정렬 */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
+    max-width: 1400px; 
+    margin: 0 auto; 
     padding-bottom: 60px;
 }
 
-/* 각 과제 카드 레이아웃 (심미성 요소 추가) */
+/* 각 과제 카드 레이아웃 */
 .project-item {
-    background-color: #ffffff; /* 하얀색 카드 배경 */
+    background-color: #ffffff; 
     padding: 24px;
-    border-radius: 20px; /* 모서리를 둥글게 */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* 부드러운 그림자 효과 */
-    transition: transform 0.2s ease; /* 마우스 올렸을 때 애니메이션 */
+    border-radius: 20px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.2s ease; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,18 +59,18 @@ header p {
     color: #0f172a;
     margin-top: 0;
     margin-bottom: 20px;
-    border-left: 4px solid #3b82f6; /* 제목 왼쪽에 파란색 포인트 바 */
+    border-left: 4px solid #3b82f6; 
     padding-left: 10px;
-    align-self: flex-start; /* 제목은 왼쪽 정렬 */
+    align-self: flex-start; 
 }
 
-/* p5.js 화면이 나오는 iframe 스타일 */
+/* p5.js 화면이 나오는 iframe 스타일 (크기 600px로 확장) */
 iframe {
     width: 100%;
-    max-width: 400px;
-    height: 400px;
+    max-width: 600px;
+    height: 600px;
     border: none;
-    border-radius: 12px; /* 실행 화면 모서리도 둥글게 */
+    border-radius: 12px; 
     background-color: #ffffff;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05); /* 테두리선 대용의 부드러운 음영 */
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05); 
 }
