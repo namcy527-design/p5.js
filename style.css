@@ -8,7 +8,7 @@ body {
     text-align: center;
 }
 
-/* 상단 타이틀 영역 스타일 */
+/* 상단 타이틀 영역 */
 header {
     margin-bottom: 50px;
 }
@@ -26,7 +26,7 @@ header p {
     margin: 0;
 }
 
-/* 2행 2열 그리드 레이아웃 (크기 1400px로 확장) */
+/* 2행 2열 그리드 레이아웃 */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -48,7 +48,7 @@ header p {
     align-items: center;
 }
 
-/* 카드에 마우스를 올렸을 때 살짝 떠오르는 효과 */
+/* 마우스 올렸을 때 떠오르는 효과 */
 .project-item:hover {
     transform: translateY(-5px);
 }
@@ -64,13 +64,13 @@ header p {
     align-self: flex-start; 
 }
 
-/* p5.js 화면이 나오는 iframe 스타일 (크기 600px로 확장) */
+/* p5.js 화면이 나오는 iframe 스타일 (600x400 정확히 맞춤!) */
 iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 600px;
+    width: 600px;
+    height: 400px;
     border: none;
     border-radius: 12px; 
     background-color: #ffffff;
-    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05); 
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
 }
